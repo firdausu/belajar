@@ -64,13 +64,19 @@ while True:
     data = "{}"
     resp = requests.post(url, headers=headers, data=data)
     aa = json.loads(resp.text)
+#    print(aa)
     idtoken = aa["idToken"]
     retok = aa['refreshToken']
     fn = fake.first_name()
     ln = fake.last_name()
     rnf = fake.random_int(min=11111, max=99999)
     dnam = fn+ str(rnf)
-    email = cdkm()
+    url = "https://raw.githubusercontent.com/firdausu/belajar/main/siaka.json"
+    response = requests.get(url)
+    emails = json.loads(response.text)
+    reff = random.choice(emails['reff'])
+    dom = random.choice(emails['domain'])
+    email = dnam+"@"+dom
     username, domain = email.split("@")
     surl = f"{domain}/{username}"
     angka_random = random.randint(1, 9)
@@ -218,7 +224,7 @@ while True:
     #print(ff)
     
     data = {
-        "referralId": "rzPrVuwx"
+        "referralId": reff
     }
     res = requests.post("http://api.sopay.ai/user/refer", headers=headers, json=data)
     gg = json.loads(res.text)
