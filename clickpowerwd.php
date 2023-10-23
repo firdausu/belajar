@@ -7,7 +7,6 @@ function sendTelegramMessage($chatId, $message) {
         'chat_id' => $chatId,
         'text' => $message
     ));
-
     $options = array(
         'http' => array(
             'method' => 'POST',
