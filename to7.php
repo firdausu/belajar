@@ -86,7 +86,7 @@ echo "\r                                             \r";
 $secretkey = md5(chr(104) . chr(51) . chr(94) . chr(37) . chr(52) . chr(126) . chr(115) . chr(120) . chr(106) . chr(108) . chr(115) . chr(100) . chr(57) . chr(49), true);
 $iv = chr(0) . chr(1) . chr(2) . chr(3) . chr(4) . chr(5) . chr(6) . chr(7) . chr(8) . chr(9) . chr(10) . chr(11) . chr(12) . chr(13) . chr(14) . chr(15);
 
-$phone = "89609972692";
+$phone = "81212571925";
 $akun = [
 [
 "a" => "050dd79b-1faf-a1e7-ab5e-9e8ca6897c6a",
