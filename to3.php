@@ -87,7 +87,7 @@ $secretkey = md5(chr(104) . chr(51) . chr(94) . chr(37) . chr(52) . chr(126) . c
 $iv = chr(0) . chr(1) . chr(2) . chr(3) . chr(4) . chr(5) . chr(6) . chr(7) . chr(8) . chr(9) . chr(10) . chr(11) . chr(12) . chr(13) . chr(14) . chr(15);
 
 $uuid = uuidv4();
-$phone = "89609972692";
+$phone = "81212571925";
 $token = $uuid;
 #$token = "5c5b104e-9ea5-4e8f-ae2d-d4ed978bb4db";
 #$token = "9d741257-e2b0-4648-a17c-1349368ae2a1";
